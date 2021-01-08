@@ -1,0 +1,30 @@
+<!-- LANDING PAGE -->
+<header id="home" class="header" (scroll)="scrolling($event)" [ngClass]="{'header__menu--fixed': scroll}">
+  <div class="overlay">
+    <nav>
+      <ul class="header__menu">
+        <li class="header__menu__item" (click)="resetScroll()">Home </li>
+        <li class="header__menu__item">About Me</li>
+        <li class="header__menu__item">Portfolio</li>
+        <li class="header__menu__item">Repos</li>
+        <li class="header__menu__item">Contact</li>
+      </ul>
+    </nav>
+
+    <section class="header__hero" [ngClass]="{'header__hero--hide': scroll}">
+      <h1 class="header__hero__logo">JoshuaDaza</h1>
+      <h3>Software Engineer / Web</h3>
+      <ul class="header__hero__menu">
+        <a target="_blank" href="https://www.linkedin.com/in/joshuadaza/" class="header__hero__menu__item">LinkedIn</a>
+        <a target="_blank" href="https://es.quora.com/q/avxhpsoljiyyzebk" class="header__hero__menu__item">Blog</a>
+        <a target="_blank" href="https://www.youtube.com/c/joshuadazarincon/videos"
+          class="header__hero__menu__item">Youtube</a>
+      </ul>
+    </section>
+  </div>
+  <svg width="100px" height="30px">
+    <polygon points="0,0 100,0 50,30 " />
+  </svg>
+
+
+</header>
