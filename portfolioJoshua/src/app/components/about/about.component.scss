@@ -1,0 +1,66 @@
+@import "../../../assets/scss/colors.scss";
+@import "../../../assets/scss/breakpoints.scss";
+@import "../../../assets/scss/typo.scss";
+
+.about {
+  color: $bg;
+  padding: 3rem 4rem 1rem 4rem;
+  @include tablet {
+    padding: 3rem 20vw 1rem 20vw;
+  }
+  @include desktop {
+    padding: 3rem 25vw 1rem 25vw;
+  }
+  h2 {
+    font-size: 3rem;
+    width: 100%;
+
+    @include mobile {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    &::after {
+      height: 0;
+      width: 100%;
+      border-top: 2px dashed $gray;
+      margin: 1rem auto;
+      content: "";
+      display: block;
+      @include tablet {
+        margin: 1rem 0;
+      }
+    }
+  }
+  .about__container {
+    display: flex;
+    justify-content: space-evenly;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    .about__foto {
+      order: 1;
+      img {
+        border-radius: 50%;
+      }
+      @include tablet {
+        order: 2;
+      }
+    }
+    .about__description {
+      order: 2;
+      padding-right: 0.7rem;
+      @include tablet {
+        order: 1;
+      }
+      .signature {
+        float: right;
+        font-family: "Brush Script MT", cursive;
+      }
+    }
+  }
+  .about__skills {
+    padding: 3rem 0 1rem 0;
+  }
+}

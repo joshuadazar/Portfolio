@@ -21,16 +21,26 @@
       justify-content: center;
       .header__menu {
         padding: 0;
-        margin: 20px 0;
-        width: 80vw;
+        margin: 2rem 0;
+        width: 60vw;
         height: 3rem;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        @include mobile {
+          width: 100vw;
+        }
         .header__menu__item {
           cursor: pointer;
           text-decoration: none;
           list-style: none;
+          font-size: 1.5rem;
+          @include mobile {
+            font-size: 1rem;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -58,14 +68,17 @@
         display: flex;
         justify-content: space-evenly;
         width: 20vw;
-        min-width: 300px;
+        min-width: $mobile;
         padding-top: 1.5em;
         .header__hero__menu__item {
           list-style: none;
           text-decoration: none;
           color: inherit;
           background: $black;
-          padding: 1em;
+          padding: 1.5rem 2.3rem;
+          @include mobile {
+            padding: 1rem 2rem;
+          }
 
           &:nth-child(1) {
             border: solid 1px $text-menu;
