@@ -8,40 +8,42 @@ import { Iskills } from '../../layout/models/iskills'
 })
 export class SkillsComponent implements OnInit {
 
+  public imageSkills: string = 'https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg'
+
   public skillsArr: Array<Iskills> = [
     {
       title: 'Javascript and Typescript',
       abbr: 'JS',
-      image: 'https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laborum accusantium! Ex reprehenderit nisi, sed accusantium similique blanditiis magni doloremque in dolore necessitatibus inventore voluptates minima eos ad, ullam veritatis!',
+      image: this.imageSkills,
+      description: "I've worked using Vanilla JS ES6 and further including: POO, and functional definitions even integrations with libraries and Typescript for many projects including Backend API's ",
       state: true
     },
     {
       title: 'CSS and Layout',
       abbr: 'UI',
-      image: 'https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg',
-      description: 'description UI',
+      image: this.imageSkills,
+      description: 'Good experience creating layouts using BEM flexbox, Grid, also implements pre-processors (SASS, LESS) and layout libraries (Bootstrap, MaterialCSS, MetroUI) ',
       state: false
     },
     {
       title: 'Angular',
       abbr: 'Ng',
-      image: 'https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laborum accusantium! Ex reprehenderit nisi, sed accusantium similique blanditiis magni doloremque in dolore necessitatibus inventore voluptates minima eos ad, ullam veritatis!',
+      image: this.imageSkills,
+      description: "Angular is my favorite framework ever because full Package!, I had the opportunity to create SPA solutions including extra features (Rxjs/Authentication/API Mgnt/Lazzy Loading/State Mgnt/)",
       state: false
     },
     {
       title: 'React',
       abbr: 'Rjs',
-      image: 'https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laborum accusantium! Ex reprehenderit nisi, sed accusantium similique blanditiis magni doloremque in dolore necessitatibus inventore voluptates minima eos ad, ullam veritatis!',
+      image: this.imageSkills,
+      description: "React is awsome, today I keep learning more  about that progressive library, I was integrate with few projects in specific features and hope using it more in the future...",
       state: false
     },
     {
-      title: 'Node',
-      abbr: 'N',
-      image: 'https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laborum accusantium! Ex reprehenderit nisi, sed accusantium similique blanditiis magni doloremque in dolore necessitatibus inventore voluptates minima eos ad, ullam veritatis!',
+      title: 'Node/Express',
+      abbr: 'Njs',
+      image: this.imageSkills,
+      description: "I using Node in Front-end with package manager Webpack, npm and few utilities. In backend I was create few solutions implementing API apps with express and DB interactions ",
       state: false
     }
   ];

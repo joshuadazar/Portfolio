@@ -1,4 +1,4 @@
-$optionDefaultColours: #ed5565, #fc6e51, #ffce54, #2ecc71, #5d9cec, #ac92ec;
+$optionDefaultColours: #ffce54, #ac92ec, #ed5565, #5d9cec, #2ecc71;
 
 .options {
   margin: 0 auto;
@@ -33,7 +33,7 @@ $optionDefaultColours: #ed5565, #fc6e51, #ffce54, #2ecc71, #5d9cec, #ac92ec;
     background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
     background-size: auto 120%;
     background-position: center;
-
+    background-color: rgba(4, 14, 22, 0.83);
     cursor: pointer;
 
     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
@@ -131,11 +131,12 @@ $optionDefaultColours: #ed5565, #fc6e51, #ffce54, #2ecc71, #5d9cec, #ac92ec;
         .main {
           font-weight: bold;
           font-size: 1.2rem;
-          transform: translateY(100px);
+          transform: translateY(70px);
         }
         .sub {
           transition-delay: 0.1s;
           transform: translateY(-190px);
+          padding-right: 5px;
         }
       }
     }
