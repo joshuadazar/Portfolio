@@ -1,0 +1,17 @@
+<div class="options">
+
+  <div *ngFor="let skill of skillsArr" (click)="toggleCard(skill)" [ngClass]="{'active': skill.state}" class="option"
+    [ngStyle]="{'background-image': 'url(' + skill.image + ')'}">
+    <div class="shadow"></div>
+    <div class="label">
+      <div class="icon">
+        <i class="fas fa-walking">{{skill.abbr}}</i>
+      </div>
+      <div class="info">
+        <div class="main">{{skill.title}}</div>
+        <div class="sub">{{skill.description}}</div>
+      </div>
+    </div>
+  </div>
+
+</div>

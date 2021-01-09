@@ -3,8 +3,8 @@
   <div class="overlay">
     <nav>
       <ul class="header__menu">
-        <li routerLink="/about" class="header__menu__item" (click)="resetScroll()">Home </li>
-        <li routerLink="/about" class="header__menu__item">About Me</li>
+        <li routerLink="/about" class="header__menu__item" (click)="setScroll(0)">Home </li>
+        <li routerLink="/about" class="header__menu__item" (click)="setScroll(200)">About Me</li>
         <li routerLink="/portfolio" class="header__menu__item">Portfolio</li>
         <li routerLink="/repos" class="header__menu__item">Repos</li>
         <li routerLink="/contact" class="header__menu__item">Contact</li>

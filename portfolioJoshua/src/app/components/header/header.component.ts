@@ -28,8 +28,8 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  resetScroll = () => {
-    window.scroll(0, 0)
+  setScroll = (value: number) => {
+    window.scroll(0, value)
   }
 
 }

@@ -13,7 +13,6 @@ export class LayoutService {
     return this.addPaddingSubject.asObservable();
   }
   setAddPaddingSubject(status: boolean) {
-    console.log(status, 'status observer');
     this.addPaddingSubject.next(status);
   }
 }

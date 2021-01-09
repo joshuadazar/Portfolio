@@ -114,6 +114,7 @@
 
 .header__menu--fixed {
   position: fixed;
+  z-index: 2;
   .overlay {
     padding-bottom: 0;
   }
