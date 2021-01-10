@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/colors.scss";
+
+@mixin border($color: $gray) {
+  border: solid 1px $color;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,4 +14,17 @@
 
 body {
   height: 200vh;
+}
+
+thead {
+  @include border($text-menu);
+  .ng2-smart-title {
+    color: $black;
+  }
+}
+tbody {
+  @include border($text-menu);
+  tr {
+    @include border($gray);
+  }
 }

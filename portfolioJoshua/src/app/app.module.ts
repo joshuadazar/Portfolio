@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 //services
 import { LayoutService } from './layout/services/layout.service'
 
@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ReposComponent } from './components/repos/repos.component';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 @NgModule({
   declarations: [
@@ -18,10 +20,13 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     AboutComponent,
     SkillsComponent,
     PortfolioComponent,
+    ReposComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2SmartTableModule,
+    HttpClientModule
   ],
   providers: [
     LayoutService

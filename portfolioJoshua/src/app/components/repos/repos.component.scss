@@ -1,0 +1,13 @@
+@import "../about/about.component.scss";
+.about {
+  .about__container {
+    margin-bottom: 2rem;
+    .about__description a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .container {
+    margin-top: 4rem;
+  }
+}

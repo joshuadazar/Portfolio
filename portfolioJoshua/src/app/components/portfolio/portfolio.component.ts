@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Iportfolio } from 'src/app/layout/models/iportfolio';
-import moduleName from '../../../ass'
 
 @Component({
   selector: 'app-portfolio',
