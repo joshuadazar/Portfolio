@@ -1,0 +1,78 @@
+<section id="portfolio" class="about">
+  <!-- CONTAINER -->
+
+  <h2>My Experience...</h2>
+
+  <div class="about__container">
+    <p class="about__description">
+      As software engineer I was working with some projects using different technologies
+      and Agile methodologies like Scrum. I was take responsabilities like:br<br><br><b>Layout Design | Scaffolding |
+        Front/Setup | Development | Back/integrations | Testing | Code review</b>
+      <span class="signature">Actitities</span>
+
+    </p>
+    <div class="about__foto">
+      <ul class="about__foto__list">
+        <li>Angular</li>
+        <li>React</li>
+        <li>AEM</li>
+        <li>Vue</li>
+      </ul>
+      <img width="150px" height="150px" src="../../../assets/images/skills.jpg" alt="Joshua Daza Picture" class="image">
+    </div>
+  </div>
+
+  <h2>Some Projects...</h2>
+
+  <div class="container">
+    <div class="options" style="background:url(../../../assets/images/skills.jpg);">
+      <div class=" options__option" *ngFor="let project of portfolioArr" (click)="getPortfolio(project)">
+        <div class="icon">
+          <p class="">💼</p>
+        </div>
+        <div class="info">
+          {{project.title}}
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="option__description">
+
+      <img [attr.src]="project.image" [attr.alt]="project.title" width="50px">
+
+      <div class="title">
+        <i> {{project.title}}</i>
+      </div>
+      <div class="description">
+        {{project.description}}
+      </div> <br>
+
+      <span>Technologies: </span>
+      <span><b> {{project.tech}}</b></span>
+      <br>
+      <span>Development lapse:</span>
+      <span><b> {{project.time}}</b></span>
+      <br>
+      <span>Specifications:</span>
+      <span><b> {{project.specifications}}</b></span>
+      <br>
+      <span>Role:</span>
+      <span><b>{{project.role}}</b></span>
+      <br>
+      <span>Link:</span>
+      <span><b> <a [attr.href]="project.link"> ☁ Project Site </a> </b> | Globant</span>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- END OF CONTAINER -->
+
+</section>

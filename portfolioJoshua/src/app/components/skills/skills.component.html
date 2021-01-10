@@ -1,6 +1,8 @@
 <div class="options">
 
-  <div *ngFor="let skill of skillsArr" (click)="toggleCard(skill)" [ngClass]="{'active': skill.state}" class="option"
+  <div class="options__message"><i>✔ Check My skills !!</i></div>
+
+  <div *ngFor="let skill of skillsArr" (click)="toggleCard(skill)" [ngClass]="{'active': skill.state}" class=" option"
     [ngStyle]="{'background-image': 'url(' + skill.image + ')'}">
     <div class="shadow"></div>
     <div class="label">

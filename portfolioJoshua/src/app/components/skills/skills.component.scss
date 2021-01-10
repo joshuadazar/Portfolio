@@ -1,4 +1,4 @@
-$optionDefaultColours: #ffce54, #ac92ec, #ed5565, #5d9cec, #2ecc71;
+$optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
 
 .options {
   margin: 0 auto;
@@ -19,6 +19,26 @@ $optionDefaultColours: #ffce54, #ac92ec, #ed5565, #5d9cec, #2ecc71;
       .option:nth-child(#{6-$i}) {
         display: none;
       }
+    }
+  }
+
+  .options__message {
+    position: absolute;
+    transform: translate(-20vw, -30px);
+    animation: fadeToogle 5s linear infinite;
+  }
+  @keyframes fadeToogle {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.1;
     }
   }
 

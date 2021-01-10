@@ -8,7 +8,7 @@ import { Iskills } from '../../layout/models/iskills'
 })
 export class SkillsComponent implements OnInit {
 
-  public imageSkills: string = 'https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg'
+  public imageSkills: string = '../../../assets/images/skills.jpg'
 
   public skillsArr: Array<Iskills> = [
     {
