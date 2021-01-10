@@ -22,7 +22,7 @@
     </div>
   </div>
 
-  <h2>Some Projects...</h2>
+  <h2>Main Projects...</h2>
 
   <div class="container">
     <div class="options" style="background:url(../../../assets/images/skills.jpg);">
@@ -67,6 +67,17 @@
     </div>
   </div>
 
+  <h2>More Projects...</h2>
+  <div class="container about__more">
+    <div class="card" *ngFor="let project of behanceArr">
+      <a target="_blank" [attr.href]="project.link">
+        <div class="info">
+          <strong class="tittle"> </strong> <img [attr.src]="project.image" alt="Project Image from Behance">
+          <p>{{project.title}}</p>
+        </div>
+      </a>
+    </div>
+  </div>
 
 
 

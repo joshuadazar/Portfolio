@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Iportfolio } from 'src/app/layout/models/iportfolio';
+import { ReposService } from 'src/app/layout/services/repos.service';
+
+export interface Ibehance {
+  title: string;
+  link: string;
+  image: string;
+}
 
 @Component({
   selector: 'app-portfolio',
@@ -51,9 +58,34 @@ export class PortfolioComponent implements OnInit {
     }
   ];
 
+
+
+  public behanceArr: Array<Ibehance> = [
+    {
+      title: 'Kimed plataforma de gestión en salud',
+      link: "https://www.behance.net/gallery/66109579/Plataforma-web-Kimed",
+      image: "https://mir-s3-cdn-cf.behance.net/projects/404/b1f3ec66109579.Y3JvcCwxMzQ3LDEwNTQsMCww.jpg"
+    },
+    {
+      title: 'UDI sitio Web institucional',
+      link: "https://www.behance.net/gallery/29039283/Pagina-Web-UDI",
+      image: "https://mir-s3-cdn-cf.behance.net/projects/404/9e26c729039283.55def5cba2a55.png"
+    },
+    {
+      title: 'Gestualeap Interprete de Señas NUI ',
+      link: "https://www.behance.net/gallery/62493263/Gestualeap-10-wwwgestualeapco",
+      image: "https://mir-s3-cdn-cf.behance.net/projects/404/19623a62493263.Y3JvcCwxNDE3LDExMDksMTc4LDA.jpg"
+    },
+    {
+      title: 'ESE Envíos Nacionales',
+      link: "https://www.behance.net/gallery/66111313/Diseno-de-Plataforma-web-movil-%28UI-Design%29",
+      image: "https://mir-s3-cdn-cf.behance.net/projects/404/c51bfa66111313.Y3JvcCw3MTYsNTYwLDEyOTAsMjI0.png"
+    }
+  ]
+
   public project: Iportfolio = this.portfolioArr[0];
 
-  constructor() { }
+  constructor(private repoService: ReposService) { }
 
   ngOnInit(): void {
   }
@@ -65,5 +97,6 @@ export class PortfolioComponent implements OnInit {
       }
     });
   }
+
 
 }
