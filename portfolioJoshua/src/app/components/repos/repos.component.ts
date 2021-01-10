@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from 'src/app/layout/services/layout.service';
 import { ReposService } from 'src/app/layout/services/repos.service';
 
 @Component({
@@ -25,7 +26,7 @@ export class ReposComponent implements OnInit {
       },
 
       name: {
-        title: 'Repo Name'
+        title: 'Name'
       },
       description: {
         title: 'Description'

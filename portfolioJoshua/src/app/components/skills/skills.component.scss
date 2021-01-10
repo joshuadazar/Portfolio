@@ -45,7 +45,7 @@ $optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
   .option {
     position: relative;
     overflow: hidden;
-
+    height: 300px;
     min-width: 60px;
     margin: 10px;
     //border:0px solid --defaultColor;
@@ -155,7 +155,7 @@ $optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
         }
         .sub {
           transition-delay: 0.1s;
-          transform: translateY(-190px);
+          transform: translate(-20px, -150px);
           padding-right: 5px;
         }
       }

@@ -5,13 +5,12 @@
       <ul class="header__menu">
         <li routerLink="/about" class="header__menu__item" (click)="setScroll(0)">Home </li>
         <li routerLink="/about" class="header__menu__item" (click)="setScroll(200)">About Me</li>
-        <li routerLink="/portfolio" class="header__menu__item">Portfolio</li>
-        <li routerLink="/repos" class="header__menu__item">Repos</li>
-        <li routerLink="/contact" class="header__menu__item">Contact</li>
+        <li routerLink="/portfolio" class="header__menu__item" (click)="setScroll(200)">Projects</li>
+        <li routerLink="/repos" class="header__menu__item">Repositories</li>
       </ul>
     </nav>
 
-    <section class="header__hero" [ngClass]="{'header__hero--hide': scroll}">
+    <section class=" header__hero" [ngClass]="{'header__hero--hide': scroll}">
       <h1 class="header__hero__logo">JoshuaDaza</h1>
       <h3>Software Engineer / Web</h3>
       <ul class="header__hero__menu">

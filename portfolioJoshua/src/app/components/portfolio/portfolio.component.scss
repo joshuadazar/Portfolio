@@ -1,7 +1,7 @@
 @import "../about/about.component.scss";
 .about {
   h2:not(:nth-child(1)) {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .about__foto {
     .about__foto__list {
