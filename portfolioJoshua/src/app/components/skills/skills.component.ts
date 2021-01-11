@@ -12,7 +12,7 @@ export class SkillsComponent implements OnInit {
 
   public skillsArr: Array<Iskills> = [
     {
-      title: 'Javascript and Typescript',
+      title: 'JS/Typescript',
       abbr: 'JS',
       image: this.imageSkills,
       description: "I've worked using Vanilla JS ES6 and further including: POO, and functional definitions even integrations with libraries and Typescript for many projects including Backend API's ",

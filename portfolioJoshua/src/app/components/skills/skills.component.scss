@@ -1,4 +1,6 @@
-$optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
+@import "../../../assets/scss/breakpoints.scss";
+@import "../../../assets/scss/colors.scss";
+$optionDefaultColours: #ffce54, $text-menu, #ed5565, #5d9cec, #2ecc71, #ffce54;
 
 .options {
   margin: 0 auto;
@@ -11,7 +13,7 @@ $optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
   min-width: 600px;
   max-width: 900px;
   width: calc(100% - 100px);
-  height: 400px;
+  height: auto;
 
   @for $i from 1 through 4 {
     @media screen and (max-width: 798px - $i*80) {
@@ -62,6 +64,9 @@ $optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
       &:nth-child(#{$i}) {
         border: solid 2px #{nth($optionDefaultColours, $i)};
       }
+    }
+    @include mobile {
+      display: none;
     }
     &.active {
       flex-grow: 10000;
@@ -151,7 +156,7 @@ $optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
         .main {
           font-weight: bold;
           font-size: 1.2rem;
-          transform: translateY(70px);
+          transform: translateY(50px);
         }
         .sub {
           transition-delay: 0.1s;
@@ -159,6 +164,52 @@ $optionDefaultColours: #ffce54, #ffce54, #ed5565, #5d9cec, #2ecc71, #ffce54;
           padding-right: 5px;
         }
       }
+    }
+  }
+}
+
+.about__more {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  perspective: 800px;
+
+  @include tablet {
+    display: none;
+  }
+  .card {
+    cursor: pointer;
+    padding: 0.2em;
+    transition: all 0.5s ease-out;
+    @for $i from 1 through length($optionDefaultColours) {
+      &:nth-child(#{$i}) {
+        border: solid 2px #{nth($optionDefaultColours, $i)};
+      }
+    }
+    &:hover {
+      transform: translatey(-2%);
+      transition: all 0.3s ease-in;
+      box-shadow: 0 -3px 15px silver;
+
+      transform-style: preserve-3d;
+    }
+    strong {
+      font-size: 1.5rem;
+      text-align: center;
+      color: $white;
+      background: $bg;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    p {
+      padding: 0.5em 0.5em;
+      line-height: 1.5em;
+      font-weight: 300;
+    }
+    img {
+      width: 100%;
     }
   }
 }

@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/scss/colors.scss";
+@import "./assets/scss/breakpoints.scss";
 
 @mixin border($color: $gray) {
   border: solid 1px $color;
@@ -19,12 +20,51 @@ body {
 thead {
   @include border($text-menu);
   .ng2-smart-title {
-    color: $black;
+    a {
+      color: $bg;
+    }
+  }
+  @include mobile {
+    th:not(:nth-child(1)) {
+      display: none;
+    }
+  }
+  @include tablet {
+    th {
+      display: table-cell;
+    }
+    th:not(:nth-child(-n + 2)) {
+      display: none;
+    }
+  }
+  @include desktop {
+    th:nth-child(n + 1) {
+      display: table-cell;
+    }
   }
 }
 tbody {
   @include border($text-menu);
   tr {
     @include border($gray);
+  }
+
+  @include mobile {
+    td:not(:nth-child(1)) {
+      display: none;
+    }
+  }
+  @include tablet {
+    td {
+      display: table-cell;
+    }
+    td:not(:nth-child(-n + 2)) {
+      display: none;
+    }
+  }
+  @include desktop {
+    td:nth-child(n + 1) {
+      display: table-cell;
+    }
   }
 }

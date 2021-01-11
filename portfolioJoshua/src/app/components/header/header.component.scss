@@ -70,6 +70,9 @@
         width: 20vw;
         min-width: $mobile;
         padding-top: 1.5em;
+        @include mobile {
+          min-width: $mobile / 1.2;
+        }
         .header__hero__menu__item {
           list-style: none;
           text-decoration: none;

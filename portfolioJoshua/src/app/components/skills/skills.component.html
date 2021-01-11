@@ -16,4 +16,14 @@
     </div>
   </div>
 
+  <div class="container about__more">
+    <div class="card" *ngFor="let skill of skillsArr">
+      <div class="info">
+        <strong class="tittle"> {{skill.title}}</strong>
+        <p>{{skill.description}}</p>
+      </div>
+    </div>
+  </div>
+
+
 </div>
