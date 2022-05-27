@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
   public portfolioArr: Array<Iportfolio> = [
     {
       title: 'Ernest & Young',
-      description: "Market Segmentation Database (MSD) Sistema para gestión interno de campañas comerciales para el seguimiento de clientes corporativos y reporte de estados que por medio de UI apoyado en tablas dinámicas con filtros, formularios para gestión de usuarios/ roles o clientes, gestión de tokens e integración con API.",
+      description: "Market Segmentation Database (MSD) System for internal management of commercial campaigns for monitoring corporate clients and status reporting through a UI supported by dynamic tables with filters, forms for user/role or client management, token management and integration with API.",
       tech: 'Angular | .Net Core',
       time: "10 Sprints ",
       specifications: '100% Migration Excel app to SPA',
@@ -28,7 +28,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       title: 'Autodesk ',
-      description: 'Fusion Life Cycle | FLC / PLM: Aplicación web de parametrización de objetos y gestión de sistemas mixtos basados en construcción de modelos 3D (Linea CAD: Maya, Inventor, Revit, 3DSMax ) ',
+      description: 'Fusion Life Cycle | FLC / PLM: Web application for object parameterization and management of mixed systems based on the construction of 3D models (CAD line: Maya, Inventor, Revit, 3DSMax) ',
       tech: 'Angularjs | React | Java J2EE',
       time: '6 Sprints',
       specifications: 'Maintenance and components migration to React js',
@@ -38,7 +38,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       title: 'Direct TV',
-      description: 'Desarrollo de plataforma  web Latam (Colombia, Argentina, Chile, Ecuador, Uruguay) para productos y esquema comercial mediante integración con CMS Adobe Experience Manager y Rhino/Java. Actividades: desarrollo de componentes UI, integración con API, gestión de roles, desarrollo de plantillas.  ',
+      description: 'Development of the Latam web platform (Colombia, Argentina, Chile, Ecuador, Uruguay) for products and commercial scheme through integration with CMS Adobe Experience Manager and Rhino/Java. Activities: UI component development, API integration, role management, template development. ',
       tech: 'AEM | JS | Java',
       time: "6 Sprints",
       specifications: 'UI components and templates for public sites',
@@ -48,7 +48,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       title: 'Rimac',
-      description: 'Desarrollo de sitio web y módulos para cotización de productos y servicios, creación de componentes editables, gestión de templates, desarrollo de Layout ',
+      description: 'Development of a website and modules for the quotation of products and services, creation of editable components, management of templates, development of Layout',
       tech: 'AEM | JS | React | Java',
       time: "8 Sprints",
       specifications: 'Development UI components and templates for public site',
