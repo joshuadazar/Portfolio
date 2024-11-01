@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Brush Script MT";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/brush-script-mt-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/roboto-regular.woff2") format("woff2");
+}
+
+//Sizes
+$base: 16px;
+$h1: 48px;
+$h2: 32px;
+$h3: 20px;

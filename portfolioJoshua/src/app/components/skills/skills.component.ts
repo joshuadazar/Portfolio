@@ -54,13 +54,7 @@ export class SkillsComponent implements OnInit {
   }
 
   toggleCard(skill: Iskills) {
-    this.skillsArr.map(item => {
-      if (item.abbr === skill.abbr) {
-        item.state = true;
-      } else {
-        item.state = false;
-      }
-    });
+    this.skillsArr.map(item => item.abbr === skill.abbr ? item.state = true : item.state = false);
 
 
   }

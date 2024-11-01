@@ -10,9 +10,7 @@ const routes: Routes = [
     redirectTo: '/about',
     pathMatch: 'full'
   },
-  // { path: '', loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule), canActivate: [AuthUserGuard] },
-  // //  { path: '', loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule) },
-  // { path: 'accessDenied', component: AccessDeniedComponent },
+
   { path: 'about', component: AboutComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'repos', component: ReposComponent },

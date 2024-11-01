@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./assets/scss/colors.scss";
-@import "./assets/scss/breakpoints.scss";
+@import "./app/scss/index.scss";
 
 @mixin border($color: $gray) {
   border: solid 1px $color;
@@ -12,7 +11,6 @@
   font-size: 16px;
   font-family: Lato;
 }
-
 body {
   height: 100vh;
 }

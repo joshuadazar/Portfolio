@@ -1,5 +1,6 @@
-@import "../../../assets/scss/breakpoints.scss";
-@import "../../../assets/scss/colors.scss";
+@import "../../scss/breakpoints";
+@import "../../scss/colors";
+
 $optionDefaultColours: #ffce54, $text-menu, #ed5565, #5d9cec, #2ecc71, #ffce54;
 
 .options {
